@@ -121,6 +121,7 @@ object Log2parquet {
         )
       })
     val df = sQLContext.createDataFrame(rowRDD,SchemaUtils.structtype)
+    println("ssss")
     df.write.parquet(outputPath)
     // 关闭
     sc.stop()
