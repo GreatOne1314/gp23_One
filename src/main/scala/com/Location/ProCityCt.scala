@@ -23,7 +23,7 @@ object ProCityCt {
       .builder()
       .appName("ct")
       .master("local")
-      .config("spark.serializer","org.apache.spark.serializer.KryoSerializer")
+      .config("spark.serialize8r","org.apache.spark.serializer.KryoSerializer")
       .getOrCreate()
 
     // 获取数据
